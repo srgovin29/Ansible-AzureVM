@@ -3,6 +3,7 @@
     resource_group: "{{ rg_name }}"
     name: "{{ vnet_name }}"
     location: "{{ location }}"
+    api_version: "2019-09-01"  # Use a valid API version here
   register: vnet_creation_result
 
 - debug:
