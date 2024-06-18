@@ -1,0 +1,10 @@
+- name: Create resource group
+  azure_rm_resourcegroup:
+    name: ansible_RG
+    location: southeastasia
+  register: rg_result
+  ignore_errors: yes
+
+- name: Debug output
+  debug:
+    msg: "{{ rg_result }}"
