@@ -10,3 +10,8 @@
       azure_rm_resourcegroup:
         name:  ansible_RG
         location:  "southeast asia"
+      result: rg
+    
+    - name:
+      debug:
+        msg: "{{ rg  }}"
