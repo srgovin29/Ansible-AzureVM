@@ -1,0 +1,9 @@
+- name: Create Azure Virtual Network
+  azure_rm_virtualnetwork:
+    resource_group: "{{ rg_name }}"
+    name: "{{ vnet_name }}"
+    location: "{{ location }}"
+  register: vnet_creation_result
+
+- debug:
+  var: {{ vnet_creation_result }}
