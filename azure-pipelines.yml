@@ -7,8 +7,8 @@ trigger:
 - main
 
 pool:
-  #vmImage: ubuntu-latest
-  name: Default
+  vmImage: ubuntu-latest
+  #name: Default
 
 steps:
 - script: echo Hello, world!
@@ -25,3 +25,9 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'artifacts'
     publishLocation: 'pipeline'
+
+- task: Ansible@0
+  inputs:
+    ansibleInterface: 'agentMachine'
+    playbookPathOnAgentMachine: 'main.yml'
+    inventoriesAgentMachine: 'noInventory'
