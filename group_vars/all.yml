@@ -1,3 +1,6 @@
 # RG params
 rg_name: ansible_RG
 location: 'Southeast Asia'
+
+# Vnet Details
+vnet_name: minio_vnet
