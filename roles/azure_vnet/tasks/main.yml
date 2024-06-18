@@ -6,4 +6,4 @@
   register: vnet_creation_result
 
 - debug:
-  var: {{ vnet_creation_result }}
+  var: vnet_creation_result
