@@ -26,8 +26,8 @@ steps:
     artifact: 'artifacts'
     publishLocation: 'pipeline'
 
-- task: Ansible@0
-  inputs:
-    ansibleInterface: 'agentMachine'
-    playbookPathOnAgentMachine: 'main.yml'
-    inventoriesAgentMachine: 'noInventory'
+# - task: Ansible@0
+#   inputs:
+#     ansibleInterface: 'agentMachine'
+#     playbookPathOnAgentMachine: 'main.yml'
+#     inventoriesAgentMachine: 'noInventory'
