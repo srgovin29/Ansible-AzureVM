@@ -1,0 +1,12 @@
+---
+-
+  name: Create RG
+  hosts: localhost
+  connection: local
+  collections:
+    - azure.azcollection
+  tasks:
+    - name: Create resource group
+      azure_rm_resourcegroup:
+        name:  ansible_RG
+        location:  "southeast asia"
