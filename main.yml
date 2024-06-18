@@ -1,17 +1,17 @@
 ---
--
-  name: Create RG
+- name: Create Azure Resource Group
   hosts: localhost
   connection: local
   collections:
     - azure.azcollection
+
   tasks:
     - name: Create resource group
       azure_rm_resourcegroup:
-        name:  ansible_RG
-        location:  "southeast asia"
-      result: rg
-    
-    - name:
+        name: ansible_RG
+        location: southeastasia
+      register: rg_result
+
+    - name: Debug output
       debug:
-        msg: "{{ rg  }}"
+        msg: "{{ rg_result }}"
