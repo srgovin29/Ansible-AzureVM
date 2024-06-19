@@ -38,3 +38,10 @@ https://github.com/ansible-collections/azure
 ansible-galaxy collection install azure.azcollection
 pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt
 ansible-galaxy collection install azure.azcollection --force
+
+git installation
+----------------
+sudo apt update
+sudo apt install git
+git --version
+git version 2.34.1
