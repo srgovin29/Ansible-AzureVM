@@ -1,0 +1,11 @@
+---
+# roles/azure_vnet/tasks/main.yml
+- debug:
+    msg: "Executing vnet tasks"
+
+- import_tasks: 01.vnet.yml
+
+- debug:
+    msg: "Executing subnet tasks"
+
+- import_tasks: 02.subnet.yml
