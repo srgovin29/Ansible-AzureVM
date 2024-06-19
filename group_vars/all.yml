@@ -13,8 +13,14 @@ dns_servers:
       - "127.0.0.2"
 
 # Subnet
-subnet1_name: minio-subnet
+subnet_name: minio-subnet
 address_subnet_prefix: "10.0.1.0/24" 
 
 # Public IP Details
 public_ip_name: "minio_ip"
+
+# Network Security Group
+nsg_name: "minio-nsg"
+
+# Network interface
+nic_name: vmnic

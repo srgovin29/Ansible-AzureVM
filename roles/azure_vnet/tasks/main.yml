@@ -4,8 +4,7 @@
     msg: "Executing vnet tasks"
 
 - import_tasks: 01.vnet.yml
-
-- debug:
-    msg: "Executing subnet tasks"
-
 - import_tasks: 02.subnet.yml
+#- import_tasks: 03.Public_IP.yml
+- import_tasks: 04.nsg.yml
+- import_tasks: 05.nic.yml

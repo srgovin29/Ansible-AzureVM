@@ -1,0 +1,11 @@
+- name: Create a network interface
+  azure_rm_networkinterface:
+    name: '{{ nic_name }}'
+    resource_group: '{{ rg_name }}'
+    virtual_network: '{{ vnet_name }}'
+    subnet_name: '{{ subnet_name }}'
+    security_group: '{{ nsg_name }}'
+    ip_configurations:
+      - name: default
+        #public_ip_address_name: pip
+        primary: True
