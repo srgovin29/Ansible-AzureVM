@@ -1,13 +1,9 @@
 - name: Create virtual network
   azure.azcollection.azure_rm_virtualnetwork:
-    resource_group: ansible_RG
+    resource_group: "{{ rg_name }}"
     api_profile: latest
-    name: myVirtualNetwork
-    address_prefixes_cidr:
-      - "10.1.0.0/16"
-      - "172.100.0.0/16"
-    dns_servers:
-      - "127.0.0.1"
-      - "127.0.0.2"
+    name: "{{ vnet_name }}"
+    address_prefixes_cidr: "{{ address_prefixes_cidr }}"
+    dns_servers: "{{ dns_servers }}"
     tags:
-      testing: testing
+      testing: "{{ vnet_tag }}"
