@@ -17,4 +17,4 @@ subnet1_name: minio-subnet
 address_subnet_prefix: "10.0.1.0/24" 
 
 # Public IP Details
-public_ip_name = "minio_ip"
+public_ip_name: "minio_ip"
