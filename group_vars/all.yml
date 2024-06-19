@@ -6,8 +6,15 @@ location: 'Southeast Asia'
 vnet_name: minio-vnet
 vnet_tag: Minio-Vnet
 address_prefixes_cidr:
-      - "10.1.0.0/16"
+      - "10.0.0.0/16"
       - "172.100.0.0/16"
 dns_servers:
       - "127.0.0.1"
       - "127.0.0.2"
+
+# Subnet
+subnet1_name: minio-subnet
+address_subnet_prefix: "10.0.1.0/24" 
+
+# Public IP Details
+public_ip_name = "minio_ip"
