@@ -10,6 +10,7 @@ pool:
   #vmImage: ubuntu-latest
   #name: Default
   name: Mac-Ubuntu2204
+
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
