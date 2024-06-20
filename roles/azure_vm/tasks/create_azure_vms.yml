@@ -12,7 +12,7 @@
       sku: 22.04-LTS
       version: latest
     location: '{{ location }}'
-    zone: '{{ virtualMachine1Zone }}'
+    #zone: '{{ virtualMachine1Zone }}'
     #tags:  '{{ vm_tag }}'
     network_interfaces: 
       - name: "{{ nic_name }}1"
