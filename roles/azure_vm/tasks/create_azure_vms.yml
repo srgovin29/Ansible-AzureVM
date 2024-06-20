@@ -15,7 +15,7 @@
     zones: '{{ virtualMachine1Zone }}'
     tags:
       name:  '{{ vm_tag }}'
-    #storageProfile:
+    managed_disk_type: Standard_LRS
 
     network_interfaces: 
       - name: "{{ nic_name }}1"
