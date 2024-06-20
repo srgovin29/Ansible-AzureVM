@@ -12,7 +12,7 @@
       sku: "22_04-lts-gen2"
       version: latest
     location: '{{ location }}'
-    zones: '{{ virtualMachine1Zone }}'
+    #zones: '{{ virtualMachine1Zone }}'
     tags:
       name:  '{{ vm_tag }}'
     managed_disk_type: Standard_LRS
@@ -22,5 +22,5 @@
         resource_group: "{{ rg_name }}"
         virtual_network: "{{ vnet_name }}"
         subnet: "{{ subnet_name }}"
-        #public_ip_allocation_method: Dynamic
+        public_ip_allocation_method: Dynamic
         network_security_group: "{{ nsg_name }}"
