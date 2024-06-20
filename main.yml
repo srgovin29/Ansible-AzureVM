@@ -7,3 +7,4 @@
   roles:
     - azure_rg
     - azure_vnet
+    - azure_vm

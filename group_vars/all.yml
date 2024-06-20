@@ -24,3 +24,12 @@ nsg_name: "minio-nsg"
 
 # Network interface
 nic_name: vmnic
+
+
+# VM1 Params
+vm1_name: minioNode1
+vm1_size: "Standard_B1s"
+admin_username: "minioadmin"
+admin_password: "Singtel2024*1q2w3e4r/"
+virtualMachine1Zone: "1"
+tag: "MinIO Nodes" 

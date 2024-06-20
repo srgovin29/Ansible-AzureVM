@@ -5,6 +5,6 @@
 
 - import_tasks: 01.vnet.yml
 - import_tasks: 02.subnet.yml
-#- import_tasks: 03.Public_IP.yml
+- import_tasks: 03.Public_IP.yml
 - import_tasks: 04.nsg.yml
 - import_tasks: 05.nic.yml

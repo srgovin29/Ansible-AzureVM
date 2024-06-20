@@ -1,0 +1,23 @@
+# roles/azure_vm/tasks/create_vms.yml
+- name: Create Virtual machine MinIO Node1
+  azure_rm_virtualmachine_info:
+    resource_group: "{{ rg_name }}"
+    name:  "{{ vm1_name }}"
+    vm_size: "{{ vm1_size }}"
+    admin_username: "{{ admin_username }}"
+    admin_password: "{{ admin_password }}"
+    image:
+      offer: UbuntuServer
+      publisher: Canonical
+      sku: 22.04-LTS
+      version: latest
+    location: '{{ location }}'
+    zone: '{{ virtualMachine1Zone }}'
+    tags:  '{{ tag }}'
+    network_interfaces: 
+      - name: "{{ nic_name }}1"
+        resource_group: "{{ rg_name }}"
+        virtual_network: "{{ vnet_name }}"
+        subnet: "{{ subnet_name }}"
+        public_ip_allocation_method: Dynamic
+        network_security_group: "{{ nsg_name }}"

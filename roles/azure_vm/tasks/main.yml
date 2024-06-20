@@ -1,0 +1,3 @@
+# roles/azure_vm/tasks/main.yml
+---
+- import_tasks: create_azure_vms.yml
