@@ -7,5 +7,5 @@
     security_group: '{{ nsg_name }}'
     ip_configurations:
       - name: default
-        #public_ip_address_name: pip
+        public_ip_address_name: '{{ public_ip_name }}'
         primary: True
