@@ -13,8 +13,7 @@
       version: latest
     location: '{{ location }}'
     zone: '{{ virtualMachine1Zone }}'
-    tags:  
-      - '{{ vm_tag }}'
+    #tags:  '{{ vm_tag }}'
     network_interfaces: 
       - name: "{{ nic_name }}1"
         resource_group: "{{ rg_name }}"
