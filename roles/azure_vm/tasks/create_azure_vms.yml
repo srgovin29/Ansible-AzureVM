@@ -1,6 +1,6 @@
 # roles/azure_vm/tasks/create_vms.yml
 - name: Create Virtual machine MinIO Node1
-  azure_rm_virtualmachine_info:
+  azure_rm_virtualmachine:
     resource_group: "{{ rg_name }}"
     name:  "{{ vm1_name }}"
     vm_size: "{{ vm1_size }}"
