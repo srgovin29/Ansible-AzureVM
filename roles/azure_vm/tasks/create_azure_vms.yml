@@ -18,7 +18,7 @@
     managed_disk_type: Standard_LRS
 
     network_interfaces: 
-      - name: "{{ nic_name }}1"
+      - name: "{{ nic_name }}"
         resource_group: "{{ rg_name }}"
         virtual_network: "{{ vnet_name }}"
         subnet: "{{ subnet_name }}"
